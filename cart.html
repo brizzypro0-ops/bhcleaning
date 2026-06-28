@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Selected Services - BH Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BH <span>CLEANING SERVICES</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="cart.html" class="cart-btn active"><span class="cart-icon">&#128722;</span> CART</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main class="section-padding wide-container">
+        <h1 class="page-title-left">Your Booking Cart Summary</h1>
+
+        <div class="cart-page-layout-grid">
+            <div class="cart-items-wrapper">
+                <table class="cart-table" id="cart-display-table">
+                    <thead>
+                        <tr>
+                            <th>Selected Cleaning Service</th>
+                            <th>Frequency Rate</th>
+                            <th>Base Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items-container">
+                        <!-- JS WILL INJECT ITEMS HERE DYNAMICALLY OR FALLBACK TO BASE DEEP CLEAN -->
+                        <tr class="cart-row-item" data-price="99.00">
+                            <td>
+                                <div class="cart-item-meta">
+                                    <strong>Intensive Deep Clean Package</strong>
+                                    <span>Included: Complete kitchen interiors and inside windows treatment</span>
+                                </div>
+                            </td>
+                            <td>One-Time Reset</td>
+                            <td class="price-cell">&euro;99.00</td>
+                            <td><button class="remove-item-btn">&times; Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="services.html" class="continue-shopping-link">&larr; Add Another Service</a>
+            </div>
+
+            <div class="cart-summary-sidebar">
+                <h3>Order Totals</h3>
+                <div class="summary-line-row">
+                    <span>Subtotal Baseline</span>
+                    <span>&euro;99.00</span>
+                </div>
+                <div class="summary-line-row">
+                    <span>Tax Allocation (BTW 21%)</span>
+                    <span>&euro;20.79</span>
+                </div>
+                <hr class="summary-divider">
+                <div class="summary-line-row total-row">
+                    <span>Estimated Total</span>
+                    <strong>&euro;119.79</strong>
+                </div>
+                <a href="checkout.html" class="btn btn-yellow checkout-block-btn">PROCEED TO SECURE CHECKOUT &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 BH Cleaning Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

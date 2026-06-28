@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Reservation Checkout - BH Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- UPDATED CHECKOUT SECURE HEADER WITH TOGGLE BUTTON -->
+<header>
+    <a href="index.html" style="text-decoration: none;">
+        <div class="logo">BH <span>CLEANING SERVICES</span></div>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <!-- Re-activated standard toggle trigger framework -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+    <main class="section-padding wide-container">
+        <div class="checkout-form-grid">
+            <div class="checkout-billing-form">
+                <h2>1. Service Address & Timeline</h2>
+                <form class="checkout-main-pipeline">
+                    <div class="form-row-two">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="text" placeholder="Street Address and Apartment Unit Number" required>
+                    <div class="form-row-two">
+                        <input type="text" placeholder="Postal Code (e.g., 1012 JS)" required>
+                        <input type="text" placeholder="City Location" required>
+                    </div>
+                    
+                    <h2 class="form-section-title-inline">2. Choose Your Date & Target Window</h2>
+                    <div class="form-row-two">
+                        <input type="date" required>
+                        <select required>
+                            <option value="">Select Preferred Time Window</option>
+                            <option value="morning">Morning (08:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM - 04:00 PM)</option>
+                        </select>
+                    </div>
+
+                    <h2 class="form-section-title-inline">3. Select Secure Payment Channel</h2>
+                    <div class="payment-method-selector">
+                        <label class="radio-label-box">
+                            <input type="radio" name="payment" value="ideal" checked>
+                            <strong>iDEAL Gateway Transfer</strong>
+                        </label>
+                        <label class="radio-label-box">
+                            <input type="radio" name="payment" value="credit">
+                            <strong>Visa / Mastercard Token</strong>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-green complete-booking-btn">CONFIRM AND AUTHORIZE RESERVATION</button>
+                </form>
+            </div>
+
+            <div class="checkout-summary-receipt">
+    <h3>Reservation Summary</h3>
+    
+    <div id="checkout-dynamic-items-list"></div>
+    
+    <hr style="border:0; border-top: 1px solid rgba(0,0,0,0.08); margin: 15px 0;">
+    
+    <div class="receipt-item-line" style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px; color: var(--light-text);">
+        <span>Subtotal:</span>
+        <span id="checkout-subtotal">&euro;0.00</span>
+    </div>
+    <div class="receipt-item-line" style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 14px; color: var(--light-text);">
+        <span>BTW (21%):</span>
+        <span id="checkout-tax">&euro;0.00</span>
+    </div>
+    
+    <div class="receipt-total-line" style="display: flex; justify-content: space-between; padding-top: 12px; border-top: 2px dashed rgba(0,0,0,0.1);">
+        <span style="font-weight: 600;">Total Amount (incl. BTW):</span>
+        <strong id="checkout-total" style="font-size: 20px; color: #004428;">&euro;0.00</strong>
+    </div>
+</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 BH Cleaning Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
